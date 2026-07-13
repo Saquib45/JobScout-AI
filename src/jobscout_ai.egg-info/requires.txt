@@ -1,0 +1,9 @@
+requests
+beautifulsoup4
+lxml
+pydantic
+pydantic-settings
+python-dotenv
+pyyaml
+rich
+loguru

@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jobscout-ai"
+version = "0.1.0"
+description = "AI-powered job monitoring and notification system"
+readme = "README.md"
+requires-python = ">=3.12"
+
+dependencies = [
+    "requests",
+    "beautifulsoup4",
+    "lxml",
+    "pydantic",
+    "pydantic-settings",
+    "python-dotenv",
+    "pyyaml",
+    "rich",
+    "loguru",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"

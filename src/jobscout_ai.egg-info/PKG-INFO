@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: jobscout-ai
+Version: 0.1.0
+Summary: AI-powered job monitoring and notification system
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: lxml
+Requires-Dist: pydantic
+Requires-Dist: pydantic-settings
+Requires-Dist: python-dotenv
+Requires-Dist: pyyaml
+Requires-Dist: rich
+Requires-Dist: loguru

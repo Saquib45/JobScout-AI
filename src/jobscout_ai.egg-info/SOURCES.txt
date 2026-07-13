@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+src/jobscout/_init_.py
+src/jobscout/config/_init_.py
+src/jobscout/config/settings.py
+src/jobscout/copanies/_init_.py
+src/jobscout/core/_init_.py
+src/jobscout/core/logger.py
+src/jobscout/database/_init_.py
+src/jobscout/models/_init_.py
+src/jobscout/models/job.py
+src/jobscout/utils/_init_.py
+src/jobscout_ai.egg-info/PKG-INFO
+src/jobscout_ai.egg-info/SOURCES.txt
+src/jobscout_ai.egg-info/dependency_links.txt
+src/jobscout_ai.egg-info/requires.txt
+src/jobscout_ai.egg-info/top_level.txt
