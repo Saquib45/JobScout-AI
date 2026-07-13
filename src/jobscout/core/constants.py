@@ -1,0 +1,5 @@
+REQUEST_TIMEOUT = 30
+
+PROJECT_NAME = "JobScout AI"
+
+VERSION = "0.1.0"
