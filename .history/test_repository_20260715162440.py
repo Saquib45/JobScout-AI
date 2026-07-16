@@ -1,5 +1,5 @@
 from jobscout.database.session import get_session
-from jobscout.models.job import Job
+from jobscout.orm.job import JobORM
 from jobscout.repositories.job_repository import JobRepository
 
 
@@ -7,7 +7,7 @@ def main() -> None:
     session = get_session()
     repository = JobRepository(session)
 
-    job = Job(
+    job = JobORM(
         company="IBM",
         title="Software Engineer",
         location="Bangalore",
@@ -19,7 +19,7 @@ def main() -> None:
         source="IBM Careers",
     )
 
-    if repository.exists(str(job.url)):
+    if repository.exists(job.url):
         print("⚠ Job already exists.")
     else:
         repository.save(job)
@@ -29,6 +29,7 @@ def main() -> None:
 
     for item in repository.get_all():
         print(
+            item.id,
             item.company,
             item.title,
             item.location,
